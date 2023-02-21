@@ -1,0 +1,133 @@
+body {
+	background: url(https://www.altium.com/v2/themes/custom/altium_nexus/html/dist/images/s-hero-bg--v2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+  * {
+	font-family: 'roboto';
+	color: #FFFFFF;
+  }
+  .bg-image {
+	display: block;
+	background: url(../media/headerimage.jpg);
+	height: 20vh;
+	background-size: cover;
+	opacity: 0.7;
+  }
+  .navbar-nav, .navbar-toggler {
+	margin: 0 auto;
+  }
+  .navbar .navbar-toggler[aria-expanded="true"] {
+	color: rgb(109, 103, 228)!important;
+  }
+  .navbar .navbar-toggler:focus{
+	color: rgb(183, 62, 62);
+  }
+  .nav-link {
+	background: rgba(0, 128, 0, 0.534);
+	font-weight: bold !important;
+	color: rgb(212, 172, 13) !important;
+  }
+  .nav-link:hover {
+	transition: all 0.5s ease-in-out;
+	border: 3px solid rgb(85, 192, 250) !important;
+	font-size: 1.563rem;
+	box-shadow: 0.625rem 0.625rem 1.25rem rgb(185, 243, 252);
+  }
+  .sectionstyle::after {
+	content: "";
+	display: block;
+	border: 5px double rgba(0, 128, 0, 0.534);
+	border-radius: 5px;
+	margin: 2.188rem 0.625rem;
+  }
+  .h4 {
+	background: rgba(0, 128, 0, 0.534); 
+  }
+  .h4:hover {
+	transition: all 0.5s ease-in-out;
+	background-color: rgba(123, 143, 161, 0.7); 
+	border: 2px solid rgb(212, 172, 13) !important;
+	box-shadow: 0.313rem 0.313rem 1.25rem rgb(185, 243, 252);
+	color: rgb(56, 229, 77) !important;
+  }
+  #selfie {
+	float: left;    
+	margin-right: 1.875rem;
+  }
+  .LinkedInIcon{
+	background-color: rgb(0, 102, 170);
+	border-radius: 6px;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	font: bold 30px Arial, Helvetica, sans-serif;
+	height: 35px;
+	margin: 1px 0px 0px 10px;
+	text-align: center;
+	width: 35px;
+	transition: transform 0.2s ease-in-out;
+  }
+  .LinkedInIcon:hover {
+	background-color: rgb(0, 102, 221);
+	box-shadow: 0.313rem 0.313rem 0.626rem rgb(185, 243, 252);
+	scale: 1.3;
+  }
+  .grid-container { 
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1.875rem;
+	margin: 1.875rem 0.625rem;
+	padding: 3.125rem 3.125rem 1.563rem;
+	background: url(https://png.pngtree.com/thumb_back/fw800/background/20210619/pngtree-reforestation-cute-project-proposal-image_731051.jpg);
+	border: 2px solid black;
+	border-radius: 1.25rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+  .blogpost {
+	box-shadow: 1rem 1rem 1.25rem rgb(123, 143, 161);
+	background-color: rgba(246, 247, 193, 0.75);
+	border: 2px black solid;
+	border-radius: 1.25rem;
+	padding: 1rem;
+  }
+  .form-grid-container { 
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+	margin-bottom: 40px;
+  }
+  .input {
+	padding: 5px 0px;
+  }
+  .input input:hover {
+	cursor: pointer;
+	border: 5px purple solid;
+	transition: 0.6s all ease;
+	font-size: 20px;
+  }
+  .save {
+	margin-top: 10px; 
+  }
+  .top {
+	width: 85px;
+	padding: 8px;
+	border: 2px solid rgb(85, 192, 250);
+	background: rgb(207, 248, 247);
+	border-radius: 100px;
+	box-shadow: 10px 10px 20px black;
+	font-weight: bold;  
+  }
+  @media (max-width: 900px){
+	.grid-container {
+	  grid-template-columns: repeat(1, 1fr);
+	}
+  }
+  @media (max-width: 478px) {
+	.socials {
+	  width: 300px;
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+  }
