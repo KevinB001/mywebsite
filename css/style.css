@@ -1,5 +1,5 @@
 body {
-	background: url(https://www.altium.com/v2/themes/custom/altium_nexus/html/dist/images/s-hero-bg--v2.jpg);
+	background: url(../media/bodyBG.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
   }
@@ -9,7 +9,7 @@ body {
   }
   .bg-image {
 	display: block;
-	background: url(https://thumbs.dreamstime.com/b/business-digital-interface-graphs-charts-icons-timeline-blurred-background-website-header-banner-business-digital-129840002.jpg);
+	background: url(../media/headerimage.jpg);
 	height: 20vh;
 	background-size: cover;
 	opacity: 0.7;
@@ -109,3 +109,4 @@ body {
 	  flex-wrap: wrap;
 	}
   }
+  
