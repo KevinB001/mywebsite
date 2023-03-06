@@ -51,6 +51,9 @@ body {
 	box-shadow: 0.313rem 0.313rem 1.25rem rgb(185, 243, 252);
 	color: rgb(56, 229, 77) !important;
   }
+  p > span {
+	display: block;
+  }
   #selfie {
 	float: left;    
 	margin-right: 1.875rem;
