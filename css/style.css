@@ -27,6 +27,7 @@ body {
 	background: rgba(0, 128, 0, 0.534);
 	font-weight: bold !important;
 	color: rgb(212, 172, 13) !important;
+	transition: all 0.5s ease-in-out !important;
   }
   .nav-link:hover {
 	transition: all 0.5s ease-in-out;
@@ -43,6 +44,7 @@ body {
   }
   .h4, .top {
 	background: rgba(0, 128, 0, 0.534); 
+	transition: all 0.5s ease-in-out;
   }
   .h4:hover {
 	transition: all 0.5s ease-in-out;
