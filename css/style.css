@@ -1,14 +1,14 @@
 body {
-	background: url(media/bodyBG.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: rgb(255,255,255) !important;
-  transition: all 0.4s ease-in;
-  font-family: 'roboto';
+	background: url(../media/bodyBG.jpg);
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	color: rgb(255,255,255) !important;
+ 	transition: all 0.4s ease-in;
+ 	font-family: 'roboto';
   }
 .bg-image {
 	display: block;
-	background: url(media/headerimage.jpg);
+	background: url(../media/headerimage.jpg);
 	height: 20vh;
 	background-size: cover;
 	opacity: 0.7;
@@ -23,9 +23,9 @@ body {
 	color: rgb(183, 62, 62);
   }
 .nav-link {
-  color: rgb(212, 172, 13) !important;
+  	color: rgb(212, 172, 13) !important;
 	background: rgba(0, 128, 0, 0.534);
-  border: 1px solid rgb(91, 192, 222);
+  	border: 1px solid rgb(91, 192, 222);
 	font-weight: bold !important;
 	transition: all 0.4s ease-in-out !important;
   }
@@ -43,9 +43,9 @@ body {
 	margin: 2.188rem 0.625rem;
   }
 .h4, .top {
-  color: rgb(240, 173, 78) !important;
+  	color: rgb(240, 173, 78) !important;
 	background: rgba(0, 128, 0, 0.534); 
-  border: 1px solid rgb(91, 192, 222);
+  	border: 1px solid rgb(91, 192, 222);
 	transition: all 0.4s ease-in-out;
   }
 .h4:hover {
@@ -105,7 +105,7 @@ p > span {
 	color: rgb(0, 0, 0);
   }
   @media (max-width: 900px){
-  .grid-container {
+  	.grid-container {
 	  grid-template-columns: repeat(1, 1fr);
 	}
   }
@@ -118,60 +118,60 @@ p > span {
   }
   
 .theme {
-  width: 5px;
+  	width: 5px;
 }
 .light-mode {
-  background: url(media/themechangeBG.jpg) !important;
-  color: rgb(0,0,0) !important;
-  transition: all 0.4s ease-in;
+  	background: url(../media/themechangeBG.jpg) !important;
+	color: rgb(0,0,0) !important;
+	transition: all 0.4s ease-in;
 }
 .h4-light-mode {
-  color: rgb(64, 81, 59) !important;
-  background: rgb(199, 233, 176);
-  border: 1px solid rgb(0,0,0);
-  transition: all 0.4s ease-in;
+	color: rgb(64, 81, 59) !important;
+	background: rgb(199, 233, 176);
+	border: 1px solid rgb(0,0,0);
+	transition: all 0.4s ease-in;
 }
 .toggle-switch {
-  position: relative;
-  width: 3.75rem;
-  height: 2.13rem;
+	position: relative;
+	width: 3.75rem;
+	height: 2.13rem;
 }
 .toggle-switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+	opacity: 0;
+	width: 0;
+	height: 0;
 }
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 128, 0, 0.534);
-  border: 1px solid rgb(91, 192, 222);
-  transition: all 0.4s ease-in;
-  border-radius: 2.13rem;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 128, 0, 0.534);
+	border: 1px solid rgb(91, 192, 222);
+	transition: all 0.4s ease-in;
+	border-radius: 2.13rem;
 }
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 1.63rem;
-  width: 1.63rem;
-  left: 0.25rem;
-  bottom: 0.25rem;
-  background-color: rgb(240, 173, 78);
-  transition: 0.4s;
-  border-radius: 50%;
+	position: absolute;
+	content: "";
+	height: 1.63rem;
+	width: 1.63rem;
+	left: 0.25rem;
+	bottom: 0.25rem;
+	background-color: rgb(240, 173, 78);
+	transition: 0.4s;
+	border-radius: 50%;
 }
 input:checked + .slider {
-  background-color: rgb(199, 233, 176);
-  border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(199, 233, 176);
+	border: 1px solid rgb(0, 0, 0);
 }
 input:focus + .slider {
-  box-shadow: 0 0 2px rgb(199, 233, 176);
+  	box-shadow: 0 0 2px rgb(199, 233, 176);
 }
 input:checked + .slider:before {
-  transform: translateX(1.63rem);
-  background-color: rgb(64, 81, 59);
+	transform: translateX(1.63rem);
+	background-color: rgb(64, 81, 59);
 }
