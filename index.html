@@ -13,39 +13,47 @@
     <div class="container-fluid">
       <header id="home">
         <div class="bg-image"></div>
-        <nav class="navbar navbar-expand-md navbar-dark">
+                
+        <nav class="navbar navbar-expand-md navbar-dark d-flex d-inline">
+          <div class="theme mt-3">
+            <label class="toggle-switch">
+              <input type="checkbox" id="theme-toggle">
+              <span class="slider"></span>
+            </label>
+            <h5 class="theme-status">Light</h5>
+          </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link m-3 px-4 border border-1 border-info rounded-3 active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link m-3 px-4 rounded-3 active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link m-3 px-4 border border-1 border-info rounded-3" href="#intro">Intro</a>
+                <a class="nav-link m-3 px-4 rounded-3" href="#intro">Intro</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link m-3 px-4 border border-1 border-info rounded-3" href="#aboutme">About Me</a>
+                <a class="nav-link m-3 px-4 rounded-3" href="#aboutme">About Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link m-3 px-4 border border-1 border-info rounded-3" href="#blog">My Blog</a>
+                <a class="nav-link m-3 px-4 rounded-3" href="#blog">My Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link m-3 px-4 border border-1 border-info rounded-3" href="#newsletter">Newsletter</a>
+                <a class="nav-link m-3 px-4 rounded-3" href="#newsletter">Newsletter</a>
               </li>
             </ul>
           </div>
         </nav> 
       </header>
 
-      <div class="pb-5 text-center">
-        <h1>My software development journey</h1>
-      </div> 
+      
+        <h1 class="pb-5 text-center">My software development journey</h1>
+       
 
       <section class="sectionstyle" id="intro">
         <div class="mb-4">
-          <span class="h4 text-warning border border-1 border-info rounded-4 px-3 py-1 text-center">Introduction</span>
+          <span class="h4 rounded-4 px-3 py-1 text-center">Introduction</span>
         </div>
         <p>
           <span>My name is Kevin Bogunovic and I have decided to embark on a new and exciting journey learning software development with <a href="https://correlation-one.com" target="_blank">Correlation-One</a>.</span>
@@ -57,7 +65,7 @@
 
       <section class="sectionstyle" id="aboutme">
         <div class="mb-4">
-          <span class="h4 text-warning border border-1 border-info rounded-4 px-3 py-1 text-center">About Me</span>
+          <span class="h4 rounded-4 px-3 py-1 text-center">About Me</span>
         </div>
         <img id="selfie" src="media/Me.jpg" alt="picture of me">
         <p>
@@ -88,7 +96,7 @@
       <section class="sectionstyle" id="blog">
         <article title="MyBlog">
           <div class="mb-4">
-            <span class="h4 text-warning border border-1 border-info rounded-4 px-3 py-1 text-center">My Blog</span>
+            <span class="h4 rounded-4 px-3 py-1 text-center">My Blog</span>
           </div>
             <p>This is my first ever venture into coding and html and I am very much 
             enjoying it so far. Even though I currently work in the logistics team, I am working hard to
@@ -154,7 +162,7 @@
       
       <section class="sectionstyle" id="newsletter">
         <div class="mb-4">
-          <span class="h4 text-warning border border-1 border-info rounded-4 px-3 py-1 text-center">Newsletter</span>
+          <span class="h4 rounded-4 px-3 py-1 text-center">Newsletter</span>
         </div>
         <p>Fill out the below for more email updates: </p>
         <div class="form-grid-container">
@@ -168,10 +176,11 @@
             <input class="save" type="submit" value="Submit">
           </form>
         </div>
-        <a class="top text-warning border border-1 border-info rounded-4 px-3 py-1 text-center" href="#">Back to top</a>
+        <a class="h4 top rounded-4 px-3 py-1 text-center" href="#">Top</a>
       </section>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+        <script src="./javascript/script.js"></script>
     </div>
   </body>
 </html>
