@@ -1,3 +1,5 @@
+// theme change slider
+
 const body = document.querySelector('body');
 const headings = document.querySelectorAll('.h4');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -20,4 +22,24 @@ function toggleTheme() {
   
 themeToggle.addEventListener('click', () => {
   toggleTheme();
-}); 
+});
+
+// slide in headings
+
+const items = document.querySelectorAll('.item');
+
+const options = {
+  threshold: 0.5
+};
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('slide-in');
+    }
+  });
+}, options);
+
+items.forEach(item => {
+  observer.observe(item);
+});
