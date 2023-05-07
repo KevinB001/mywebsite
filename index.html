@@ -13,11 +13,10 @@
     <div class="container-fluid">
       <header id="home">
         <div class="bg-image"></div>
-                
-        <nav class="navbar navbar-expand-md navbar-dark d-flex d-inline">
         
-          <!-- theme change slider -->
-
+        <!-- theme change slider -->
+        
+        <nav class="navbar navbar-expand-lg navbar-dark d-flex d-inline">
           <div class="theme mt-3">
             <label class="toggle-switch">
               <input type="checkbox" id="theme-toggle">
@@ -27,7 +26,7 @@
           </div>
           
           <!-- rest of nav bar -->
-
+          
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -46,15 +45,17 @@
                 <a class="nav-link m-3 px-4 rounded-3" href="#blog">My Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link m-3 px-4 rounded-3" href="#newsletter">Newsletter</a>
+                <a class="nav-link m-3 px-4 rounded-3" href="#contact">Contact Me</a>
               </li>
             </ul>
           </div>
         </nav> 
       </header>
 
-      <h1 class="pb-5 text-center">My software development journey</h1>
+      
+        <h1 class="pb-5 text-center">My software development journey</h1>
        
+
       <section class="sectionstyle" id="intro">
         <div class="item right mb-4">
           <span class="h4 rounded-4 px-3 py-1 text-center">Introduction</span>
@@ -164,26 +165,42 @@
         </article>
       </section>
       
-      <section class="sectionstyle" id="newsletter">
+      <section class="sectionstyle" id="contact">
         <div class="item right mb-4">
-          <span class="h4 rounded-4 px-3 py-1 text-center">Newsletter</span>
+          <span class="h4 rounded-4 px-3 py-1 text-center">Contact Me</span>
         </div>
-        <p>Fill out the below for more email updates: </p>
-        <div class="form-grid-container">
-          <form action="mylandingpage.html" method="post">
-            <div><label for="fname">First name:</label></div>
-            <div class="input"><input type="text" name="fname" id="fname"></div>
-            <div><label for="lname">Last name:</label></div>
-            <div class="input"><input type="text" name="lname" id="lname"></div>
-            <div><label for="email">Email:</label></div>
-            <div class="input"><input type="email" name="email" id="email"></div>
-            <input class="save" type="submit" value="Submit">
-          </form>
+        <p>
+          <span>If you would to ask me any questions, or just say 'Hi', please fill out the below.</span>
+        </p>
+        <div class="container-fluid">
+        <form id="form" action="https://formspree.io/f/xqkowvrl" method="post">
+            
+            <div class="input-control">
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text">
+                <div class="errorMessage"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="text">
+                <div class="errorMessage"></div>
+            </div>
+            <div class="input-control">
+                <label for="message">Message:</label>
+              <textarea id="message" name="message" type="text" rows=5 cols=50></textarea>
+                <div class="errorMessage"></div>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+        
+        <div class="item right mb-4">
+          <a class="h4 top rounded-4 px-3 py-1 text-center" href="#">Top</a>
         </div>
-        <a class="h4 top rounded-4 px-3 py-1 text-center" href="#">Top</a>
       </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <script src="./javascript/script.js"></script>
     </div>
   </body>

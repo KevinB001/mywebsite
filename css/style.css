@@ -83,27 +83,60 @@ p > span {
 .card {
 	box-shadow: 0.625rem 0.625rem 1.25rem rgb(185, 243, 252);
   }
-.form-grid-container {
-	display: flex;
-	flex-direction: column;
-	padding-left: 10px;
-	margin-bottom: 40px;
-  }
-.input {
-	padding: 5px 0px;
-  }
-.input input:hover {
-	cursor: pointer;
-	border: 5px purple solid;
-	transition: 0.6s all ease;
-	font-size: 20px;
-  }
-.save {
-	margin-top: 10px;
-	border: 2px solid rgb(85, 192, 250);
-	background: rgb(207, 248, 247);
-	color: rgb(0, 0, 0);
-  }
+
+/* form */
+
+#form {
+  width: 300px;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 4px;
+}
+#form button {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: rgb(41, 57, 194);
+  border: none;
+  border-radius: 4px;
+}
+.input-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3px;
+}
+.input-control input, textarea {
+  border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+.input-control input:focus {
+  outline: 0;
+}
+.input-control.success input {
+  border: 2px solid #09c372;
+}
+.input-control.success textarea {
+  border: 2px solid #09c372;
+}
+.input-control.error input {
+  border: 4px solid #ff3860;
+}
+.input-control.error textarea {
+  border: 4px solid #ff3860;
+}
+.input-control .errorMessage {
+  color: #ff3860;
+  font-size: 14px;
+  height: 12px;
+}
+
+/* media queries */
+
   @media (max-width: 900px){
   .grid-container {
 	  grid-template-columns: repeat(1, 1fr);
@@ -182,10 +215,11 @@ input:checked + .slider:before {
 
 .item {
   opacity: 0;
+  width: 50%;
   transition: opacity 1s, transform 1s;
 }
 .right {
-  transform: translateX(50%);
+  transform: translateX(100%);
 }
 .slide-in {
   opacity: 1;
