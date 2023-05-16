@@ -1,0 +1,14 @@
+h1, #opening {
+    text-align: center;
+  }
+  #opening {
+    margin-bottom: 40px;
+  }
+  #map {
+    float: right;
+  }
+  h3 {
+    width: 40%;
+    border: 2px solid lightblue;
+    background: lightyellow;
+  }

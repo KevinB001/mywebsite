@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maps API Solution</title>
+        <link rel="stylesheet" href="css/googlemap.css">
+    </head>
+    <body>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe1cpodWaA5lsatG6BG1AtAfQwNFOo7AM&callback=initMap&v=weekly" defer></script>
+
+      <h1>Interactive map project</h1>
+
+      <div id="opening">
+      <p>Click anywhere on the map to find the latitude and longitude of that location.</p>
+      <p>To find specific latitude and longitude please visit <a href="https://www.latlong.net/" target="_blank">latlong.net</a></p>
+      </div>
+
+      <div id="map" style="width: 800px; height: 600px;"></div>
+
+      <div id="form">
+        <form>
+          <h3>Place a marker</h3>
+          <label for="latitude">Latitude:</label>
+          <input type="text" id="latitude" name="latitude">
+          <label for="longitude">Longitude:</label>
+          <input type="text" id="longitude" name="longitude">
+          <button type="button" onclick="placeMarker()">Place marker</button>
+        
+          <h3>Search for an address</h3>
+          <label for="address">Search an address:</label>
+          <input type="text" id="address" name="address">
+          <button type="button" onclick="searchAddress()">Search</button>
+              
+          <h3>Directions</h3>
+          <label for="origin">Origin:</label>
+          <input type="text" id="origin" name="origin">
+          <label for="destination">Destination:</label>
+          <input type="text" id="destination" name="destination">
+          <button type="button" onclick="getDirections()">Get Directions</button>
+
+          <h3>Place a circle</h3>
+          <label for="circleLatitude">Latitude:</label>
+          <input type="text" id="circleLatitude" name="circleLatitude">
+          <label for="circleLongitude">Longitude:</label>
+          <input type="text" id="circleLongitude" name="circleLongitude">
+          <br>
+          <label for="circleRadius">Radius (in meters):</label>
+          <input type="text" id="circleRadius" name="circleRadius">
+          <button type="button" onclick="placeCircle()">Place circle</button>
+        
+          <h3>Place a rectangle</h3>
+          <label for="rectangleNorth">North:</label>
+          <input type="text" id="rectangleNorth" name="rectangleNorth">
+          <label for="rectangleSouth">South:</label>
+          <input type="text" id="rectangleSouth" name="rectangleSouth">
+          <br>
+          <label for="rectangleEast">East:</label>
+          <input type="text" id="rectangleEast" name="rectangleEast">
+          <label for="rectangleWest">West:</label>
+          <input type="text" id="rectangleWest" name="rectangleWest">
+          <button type="button" onclick="placeRectangle()">Place rectangle</button>
+        
+          <h3>Place a polygon</h3>
+          <label for="polyLat1">Latitude 1:</label>
+          <input type="text" id="polyLat1" name="polyLat1">
+          <label for="polyLong1">Longitude 1:</label>
+          <input type="text" id="polyLong1" name="polyLong1">
+          <br>
+          <label for="polyLat2">Latitude 2:</label>
+          <input type="text" id="polyLat2" name="polyLat2">
+          <label for="polyLong2">Longitude 2:</label>
+          <input type="text" id="polyLong2" name="polyLong2">
+          <br>
+          <label for="polyLat3">Latitude 3:</label>
+          <input type="text" id="polyLat3" name="polyLat3">
+          <label for="polyLong3">Longitude 3:</label>
+          <input type="text" id="polyLong3" name="polyLong3">
+          <br>
+          <label for="polyLat4">Latitude 4:</label>
+          <input type="text" id="polyLat4" name="polyLat4">
+          <label for="polyLong4">Longitude 4:</label>
+          <input type="text" id="polyLong4" name="polyLong4">
+          <button type="button" onclick="placePolygon()">Place a polygon</button>
+        </form>
+      </div>
+      <script src="javascript/googlemap.js"></script>
+    </body>
+</html>
